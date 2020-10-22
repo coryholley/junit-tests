@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Student {
-    long id;
-    String name;
-    ArrayList<Integer> grades;
+    private long id;
+    private String name;
+    private ArrayList<Integer> grades;
 
     public Student(long id, String name) {
         this.id = id;
@@ -23,7 +23,7 @@ public class Student {
 
     // adds the given grade to the grades list
     public void addGrade(int grade){
-        grades.add(grade);
+        this.grades.add(grade);
     }
 
     // returns the list of grades
